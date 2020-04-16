@@ -1,0 +1,137 @@
+* { box-sizing: border-box;}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: thin solid black;
+}
+header {
+    margin: 10px;
+    padding: 10px;
+    background-color: grey;
+    color: white;
+}
+header > img {
+    width: 20%;
+    height: auto;
+    float: right;
+}
+.clearright {
+    clear: right;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+}
+nav > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+nav > div > a {
+    color: steelblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav > div > a:hover {
+    color: red;
+    text-decoration: underline;
+}
+main {
+    display: flex;
+}
+main > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 10px;
+}
+.left {
+    flex: 1;
+}
+.right {
+    flex: 2;
+    background-color:white;
+}
+table{
+    border:1px solid #f2f2f2;
+    width:100%;
+}
+table th{
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+td{
+    padding:5px;
+    width:50%;
+}
+.text-shadow{
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+}
+h2 .text-shadow{
+    font-size:30px;
+}
+h3{
+    font-weight:100;
+    font-size:25px;
+}
+.shadow{
+    box-shadow: 10px 10px 5px grey;
+}
+.rounded{
+    border-radius:30px;
+}
+#grad1{
+    height: 200px;
+    background-color: blue; /* For browsers that do not support gradients */
+    background-image: linear-gradient(blue, red); /* Standard syntax (must be last) */
+    padding:20px;
+  }
+footer {
+    background-color: gainsboro;
+    margin: 10px;
+    padding: 10px;
+}
+footer p {
+    text-align: center;
+}
+@media only screen and (max-width: 900px) {
+    #wrapper {
+        width: 100%;
+        border: none    ;
+    }
+    header > img {
+        width: 25%;
+        height: auto;
+        float: right;
+    }
+}
+@media only screen and (max-width: 510px) {
+
+    nav {
+        flex-direction: column;
+    }   
+    main {
+        flex-direction: column;
+    }   
+    nav > div {
+        width: auto;
+        margin: 5px;
+    }
+    main > div {
+        margin: 5px;
+    }
+    header > img {
+        width: 40%;
+        height: auto;
+        float: right;
+    }
+}

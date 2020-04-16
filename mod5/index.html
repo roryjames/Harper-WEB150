@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+RORY LANAM
+Web 150: module 5-2 lab
+02/25/2020
+-->
+<html lang="en">
+<head>	
+<title>Most basic CSS Flexbox</title>
+<meta charset="utf-8">
+<style>
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+main{
+	display: flex;
+}
+main > div{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 10px;
+}
+.left{
+	flex: 2;
+}
+.right{
+	flex: 1;
+}
+@media only screen and (max-width: 510px) {
+	main{
+		flex-direction: column;
+	}
+    nav {
+        flex-direction: column;
+    }     
+}
+</style>
+</head>
+<body>
+<header>
+	<h1>Most basic CSS Flexbox</h1>
+</header>
+<nav>
+    <div>link 1</div>
+    <div>link 2</div>
+    <div>link 3</div>
+    <div>link 4</div>
+</nav>
+<main>
+	<div class="left">
+		<h2></h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at pulvinar arcu. Morbi id rutrum leo, pulvinar volutpat turpis. Mauris scelerisque facilisis nunc, accumsan tincidunt urna vehicula id. Etiam ex purus, tincidunt cursus interdum eget, congue at urna. Duis eleifend sapien vitae ligula scelerisque, ac varius ex gravida. Ut non fringilla leo, ac mollis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+	</div>
+	<div class="right">
+		<h2></h2>
+		<p>Mauris ac fermentum massa, at volutpat ante. Etiam ac rutrum leo. Donec in tellus in turpis tempor vulputate eget ac erat. Nunc hendrerit feugiat nibh, et porta erat molestie sed. In hac habitasse platea dictumst. Donec vehicula varius molestie. Aenean lobortis velit suscipit ultrices sagittis. Sed et odio id mauris volutpat iaculis at vitae erat. </p>
+	</div>
+</main>
+<footer>
+	<p>Copyright&copy;2020</p>
+</footer>
+</body>
+</html>

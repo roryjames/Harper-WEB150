@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+RORY LANAM
+Web 150: module 5-1 lab in-class assignment
+02/25/2020
+-->
+<html lang="en">
+<head>	
+<title>Most basic CSS Flexbox</title>
+<meta charset="utf-8">
+<style>
+	nav{
+		display: flex;
+		justify-content: center;
+	}
+	nav > div{
+		background-color: #f1f1f1;
+    	margin: 10px;
+    	padding: 10px;
+    	font-size: 20px;
+	}
+	@media only screen and (max-width: 510px){
+		nav{
+			flex-direction: column;
+		}
+	}
+</style>
+</head>
+<body>
+<header>
+	<h1>Most basic CSS Flexbox</h1>
+</header>
+<nav>
+	<div>Link 1</div>
+	<div>Link 2</div>
+	<div>Link 3</div>
+	<div>Link 4</div>
+</nav>
+<main>
+	<h2>This is the main area of the page</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</main>
+<footer>
+	<p>Copyright&copy;2020</p>
+</footer>
+</body>
+</html>
